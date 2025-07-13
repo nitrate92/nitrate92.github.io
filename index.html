@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>nitrate92</title>
+   <style>
+      /* Main styling for John Singlepageington 
+         WEB DEVELOPERS, WEB DEVELOPERS, WEB DEVELOPAHS!!! 
+         Created by nitrate92. */
+
+      /* Fonts */
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+      /* Fonts end */
+
+      :root {
+         --bg-color: #E9A5F1;
+         --bg-color-alt: #8F87F1;
+         --general-text: #ffff;
+         --main-padding: 35px;
+         --upper-lower-padding: calc(50px - var(--main-padding));
+      }
+
+      body {
+         margin: 0;
+         padding-bottom: var(--upper-lower-padding);
+         background-color: var(--bg-color);
+         text-align: center;
+         /* Optimized for a smooth, round look! */
+         font-family: "Helvetica";
+      }
+
+      h1 {
+         color: var(--general-text);
+         font-size: 45px;
+      }
+
+      h2 {
+         color: #eeeeee;
+      }
+
+      p {
+         color: var(--general-text);
+         font-size: 25px;
+         text-shadow: 1px 1px black;
+      }
+
+      a:link {
+         font-size: 20px;
+         color: var(--general-text);
+         background-color: transparent;
+         text-decoration: underline;
+      }
+
+      a:visited {
+         color: var(--general-text);
+         background-color: transparent;
+         text-decoration: none;
+      }
+
+      a:hover {
+         color: lightgray;
+         transition: color var(--general-text) 0.25s ease;
+      }
+
+      a:active {
+         color: blue;
+         background-color: transparent;
+         text-decoration: underline;
+      }
+
+      /* Main styling end */
+
+      /* Other elements */
+      table,
+      th,
+      td {
+         border-collapse: collapse;
+         text-align: center;
+         color: var(--general-text);
+      }
+
+      ul {
+         display: inline-block;
+         text-align: left;
+      }
+
+      li {
+         color: var(--general-text);
+         text-shadow: 1px 1px black;
+      }
+
+      pre {
+         color: var(--general-text);
+         font-size: 18px;
+         text-align: left;
+         border-left: 5px solid var(--bg-color-alt);
+      }
+
+      /* Other elements end */
+
+      /* Classes */
+      .header {
+         padding: 5px;
+         background: var(--bg-color-alt);
+         text-shadow: 1px 1px black;
+      }
+
+      .pfp {
+         /* Round! */
+         border-radius: 50%;
+         padding: 0px;
+         margin-top: var(--upper-lower-padding);
+         /* Blur! 
+            Use this in your own site: https://cssbud.com/css-generator/css-glow-generator/ */
+         -webkit-box-shadow: 0px 0px 85px 45px rgba(255, 150, 218, 0.9);
+         -moz-box-shadow: 0px 0px 85px 45px rgba(255, 150, 218, 0.9);
+         box-shadow: 0px 0px 85px 45px rgba(255, 150, 218, 0.9);
+      }
+
+      .name {
+         margin-top: 10px;
+         margin-bottom: 5px;
+      }
+
+      .pronouns {
+         margin-top: 0px;
+      }
+
+      .content {
+         background: linear-gradient(180deg, var(--bg-color-alt) 0%, var(--bg-color) 100%);
+         padding-top: 30px;
+      }
+
+      .stupid-ul {
+         text-align: center;
+      }
+
+      .roboto-mono-bitchin {
+         font-family: "Roboto Mono", monospace;
+         font-optical-sizing: auto;
+         font-weight: 700;
+         font-style: normal;
+      }
+
+      /* Classes end */
+   </style>
+   <meta charset="utf-8">
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="nitrate92" />
+   <meta property="og:description" content="all about nitrate92" />
+   <meta property="og:url" content="https://www.nitrate92.github.io" />
+   <meta name="viewport" content="width=device=width, initial-scale=1.0">
+   <link rel="shortcut icon" href="placeholder.jpg">
+</head>
+
+<body>
+   <div class="header">
+      <img src="pfp_cropped.jpg" class="pfp" alt="profile picture" width="286.5"> <!-- 15% -->
+      <h1 class="name">nitrate92</h1>
+      <h2 class="pronouns" id="pronouns">he/they</h2>
+      <script>
+         var jan = new Date(0, 1)
+         var jul = new Date(6, 1)
+         let offset = Math.max(jan.getTimezoneOffset(), jul.getTimezoneOffset());
+         if (offset = -4) { stdOrDaylight = "D"; } else { stdOrDaylight = "S"; }
+         document.getElementById("pronouns").innerHTML = `he/they | E${stdOrDaylight}T (UTC ${offset}:00)`;
+      </script>
+   </div>
+   <div class="content">
+      <h1 class="roboto-mono-bitchin" style="margin-top:0;"><u>:3maxxing day in and out</u></h1>
+      <p>i am a software developer and hardware tinkerer primarily interested in building backend server type things.
+      </p>
+      <p>i also like to modify and collect game consoles.</p>
+      <p>my favorite song is Pink + White by Frank Ocean.</p>
+      <!-- <div class="stupid-ul">
+         <ul>
+            <li>this is a stupid list</li>
+            <li>fuck</li>
+            <li>shit</li>
+         </ul>
+      </div> -->
+      <img src="pan.svg" width="10%" alt="pansexual :0">
+      <div style="margin-top: 40px;">
+         <a href="https://github.com/nitrate92"><img src="github-mark-white.svg" width="45px"></a>
+      </div>
+   </div>
+</body>
+
+</html>
