@@ -161,6 +161,9 @@
          position: relative;
          display: inline-block;
          border-bottom: 1px dotted black;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         user-select: none;
       }
 
       .tooltip .tooltiptext {
@@ -186,6 +189,7 @@
          visibility: visible;
          opacity: 1;
       }
+
       /* Classes end */
    </style>
    <meta charset="utf-8">
@@ -209,7 +213,7 @@
       </p>
       <div class="tooltip">
          <!-- Remove top and bottom margins because this div is weird -->
-         <p style="margin-top: 0px;margin-bottom: 0px;">i &lt;3 my boyfriend!</p>
+         <p style="margin-top: 0px;margin-bottom: 0px;">i &lt;3 my man!</p>
          <span class="tooltiptext" id="when">javascript failure, laugh at this programmer</span>
       </div>
       <p>i also like to modify and collect game consoles.</p>
