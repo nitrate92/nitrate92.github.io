@@ -160,10 +160,13 @@
       .tooltip {
          position: relative;
          display: inline-block;
+         border-bottom: 1px dotted black;
       }
 
       .tooltip .tooltiptext {
          visibility: hidden;
+         opacity: 0;
+         transition: opacity 250ms ease-in;
          background-color: black;
          color: #fff;
          text-align: center;
@@ -179,12 +182,10 @@
          left: 105%;
       }
 
-      @media (hover: hover) and (pointer: fine) {
-         .tooltip:hover .tooltiptext {
-            visibility: visible;
-         }
+      .tooltip:hover .tooltiptext {
+         visibility: visible;
+         opacity: 1;
       }
-
       /* Classes end */
    </style>
    <meta charset="utf-8">
