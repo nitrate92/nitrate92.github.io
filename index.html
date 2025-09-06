@@ -20,9 +20,9 @@
       /* Fonts end */
 
       :root {
-         --bg-color: #E9A5F1;
-         --bg-color-alt: #8F87F1;
-         --general-text: #ffff;
+         --bg-color: #e9a5f1;
+         --bg-color-alt: #8f87f1;
+         --general-text: white;
          --main-padding: 35px;
          --upper-lower-padding: calc(50px - var(--main-padding));
       }
@@ -32,7 +32,7 @@
          padding-bottom: var(--upper-lower-padding);
          background-color: var(--bg-color);
          text-align: center;
-         font-family: "Helvetica"; /* Optimized for a smooth, round look! */
+         font-family: "Helvetica";
       }
 
       h1 {
@@ -41,7 +41,7 @@
       }
 
       h2 {
-         color: #eeeeee;
+         color: #eee;
       }
 
       p {
@@ -144,9 +144,10 @@
          font-style: normal;
       }
 
+      /* Try to comfortably fit to a 1080p screen, probably until there is enough content to force the page to vertically scroll on 1080p */
       .flex-thing {
          flex-wrap: wrap;
-         margin-top: 110px; /* Try to comfortably fit to a 1080p screen, probably until there is enough content to force the page to vertically scroll on 1080p */
+         margin-top: 110px;
          display: flex;
          justify-content: center;
       }
@@ -155,10 +156,6 @@
          padding: 10px;
       }
 
-      /* Example usage of tooltip and tooltiptext, in case I forget:
-      <div class="tooltip">Hover over me
-         <span class="tooltiptext">Tooltip text</span>
-      </div>  */
       .tooltip {
          position: relative;
          display: inline-block;
