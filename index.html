@@ -208,7 +208,7 @@
          <p style="margin-top:0px;margin-bottom:0px;">i &lt;3 my man!</p>
          <span class="tooltiptext" id="when">javascript failure, laugh at this programmer</span>
       </div>
-      <p>i also like to modify and collect game consoles.</p>
+      <p>i also like to modify game consoles.</p>
       <p>my favorite song is Pink + White by Frank Ocean.</p>
       <p>UNIX-like operating systems rule!</p>
       <p>have a nice day (&#8807;&#9697;&#8806;)</p>
@@ -220,13 +220,10 @@
    </div>
    <script>
       // Being in the same time zone as New Jersey is scary
-      var jan = new Date(0, 1);
-      var jul = new Date(6, 1);
-      let offset = Math.max(jan.getTimezoneOffset(), jul.getTimezoneOffset());
-      document.getElementById("pronouns").innerHTML = `he/they | E${(offset = -4) ? "D" : "S"}T (UTC ${offset}:00)`;
+      document.getElementById("pronouns").innerHTML = `he/they | Eastern Time`;
 
-      var specialDate = 1717547520; // Tue Jun 04 2024 20:32:00 GMT-0400 (Eastern Daylight Time)
       var now = new Date();
+      var specialDate = 1717547520; // Tue Jun 04 2024 20:32:00 GMT-0400 (Eastern Daylight Time)
       var nowTs = Math.floor(now.getTime() / 1000);
       var seconds = nowTs - specialDate;
       var base = "&#x2665;&#xfe0f;&nbsp;";
