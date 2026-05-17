@@ -195,68 +195,9 @@
 </head>
 
 <body>
-   <div class="header">
-      <img src="assets/img/pfp.jpg" class="pfp" alt="profile picture" width="286.5"> <!-- 15% -->
-      <h1 class="name">nitrate92</h1>
-      <h2 class="pronouns" id="pronouns">he/they</h2>
-   </div>
    <div class="content">
-      <h1 class="roboto-mono-bitchin" style="margin-top:0;"><u>:3maxxing day in and out</u></h1>
-      <p>i am a software developer and hardware tinkerer primarily interested in building backend server type things.
-      </p>
-      <div class="tooltip">
-         <!-- Remove top and bottom margins because this div is weird -->
-         <p style="margin-top:0px;margin-bottom:0px;">i &lt;3 my man!</p>
-         <span class="tooltiptext" id="when">javascript failure, laugh at this programmer</span>
-      </div>
-      <p>i also like to modify game consoles.</p>
-      <p>my favorite song is Pink + White by Frank Ocean.</p>
-      <p>UNIX-like operating systems rule!</p>
-      <p>buttons.</p>
-      <div>
-         <a href="https://atapi.space/"><img width="88px" height="31px"
-               src="https://atapi.space/assets/img/buttons/atapi.gif" alt="A red-and-pink checkerboard button with the text &quot;Atapi&quot; on it. There is also an icon of a little
-               cat fursona."></a>
-         <img src="assets/img/bob.gif">
-         <img src="assets/img/hatems.jpg">
-         <img src="assets/img/seedyourtorrents.gif">
-         <a href="https://ec.crypton.co.jp/pages/prod/virtualsinger/cv01_us"><img src="assets/img/vocaloid.gif"></a>
-         <img src="assets/img/sm_fever_button.gif">
-         <img src="assets/img/vscode.gif">
-         <a href="https://getwacup.com"><img src="assets/img/winamp.gif"></a>
-      </div>
-      <div class="flex-thing">
-         <a href="https://github.com/nitrate92"><img src="assets/img/github-mark-white.svg" width="45"
-               alt="nitrate92 on GitHub"></a>
-         <img src="assets/img/pan.svg" width="45" alt="pansexual :0">
-      </div>
-      <p>have a nice day (&#8807;&#9697;&#8806;)</p>
-   </div>
-   <script>
-      // Being in the same time zone as New Jersey is scary
-      document.getElementById("pronouns").innerHTML = `he/they | Eastern Time`;
-
-      var now = new Date();
-      var specialDate = 1717547520; // Tue Jun 04 2024 20:32:00 GMT-0400 (Eastern Daylight Time)
-      var nowTs = Math.floor(now.getTime() / 1000);
-      var seconds = nowTs - specialDate;
-      var base = "&#x2665;&#xfe0f;&nbsp;";
-      if (seconds > 31556952) {
-         var howManyYears = Math.floor(seconds / 31556952);
-         document.getElementById("when").innerHTML = base + `${howManyYears} year${howManyYears > 1 ? "s" : ""} ago`;
-      } else if (seconds > 86400) {
-         var howManyDays = Math.floor(seconds / 86400);
-         document.getElementById("when").innerHTML = base + `${howManyDays} day${howManyDays > 1 ? "s" : ""} ago`;
-      } else if (seconds > 3600) {
-         var howManyHours = Math.floor(seconds / 3600);
-         document.getElementById("when").innerHTML = base + `${howManyHours} hour${howManyHours > 1 ? "s" : ""} ago`;
-      } else if (seconds > 60) {
-         howManyMinutes = Math.floor(seconds / 60);
-         document.getElementById("when").innerHTML = base + `${howManyMinutes} minute${howManyMinutes > 1 ? "s" : ""} ago`;
-      } else {
-         document.getElementById("when").innerHTML = base + `${seconds} second${seconds > 1 ? "s" : ""} ago`;
-      }
-   </script>
+      <h1 style="margin-top:0;">this site has moved.</h1>
+      <a href="http://nitrate92.space">take me there</a>
 </body>
 
 </html>
